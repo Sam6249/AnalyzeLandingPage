@@ -1,7 +1,7 @@
 /* custom-color */
 :root {
   --primary-blue: #7aacf1;
-  --primary-orange: #ffa844;
+  --primary-purple: #AF5CD5;
 }
 .text-primary-blue {
   color: var(--primary-blue);
@@ -9,64 +9,24 @@
 .bg-primary-blue {
   background-color: var(--primary-blue);
 }
-.text-primary-orange {
-  color: var(--primary-orange);
+.text-primary-purple {
+  color: var(--primary-purple);
 }
-.bg-primary-orange {
-  background-color: var(--primary-orange);
-}
-
-/* typography */
-.noto-sans-tc-thin {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 100;
-}
-.noto-sans-tc-extralight {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 200;
-}
-.noto-sans-tc-light {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 300;
-}
-.noto-sans-tc-regular {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 400;
-}
-.noto-sans-tc-medium {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 500;
-}
-.noto-sans-tc-semibold {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 600;
-}
-.noto-sans-tc-bold {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 700;
-}
-.noto-sans-tc-extrabold {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 800;
-}
-.noto-sans-tc-black {
-  font-family: "Noto Sans TC", serif;
-  font-weight: 900;
+.bg-primary-purple {
+  background-color: var(--primary-purple);
 }
 
 /* base */
 body {
   font-family: "Noto Sans TC", serif;
   color: #444752;
-  /* background-color: rgb(255, 252, 247); */
+  background-color: rgb(255, 252, 247);
 }
 a {
   text-decoration: none;
-  color: #444752;
 }
 a:hover {
-  color: orange; /* 文字變橘色 */
-  cursor: pointer; /* 滑鼠變成指針，增加交互感 */
+  cursor: pointer; 
   transition: 0.2s;
 }
 
@@ -189,23 +149,3 @@ h6 {
 
 
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

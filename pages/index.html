@@ -20,10 +20,6 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./style.css" />
     <title>落點分析</title>
   </head>
@@ -422,78 +418,41 @@
           <div class="activity-exam mx-lg-5">
             <h4>大學學測(已過)</h4>
             <img src="./images/exam.png" alt="" width="256" />
-            <time datetime="" class="fs-5">2025/01/18~01/20</time>
+            <time datetime="2025/01/18~01/20" class="fs-5 text-primary-purple">2025/01/18~01/20</time>
           </div>
           <div class="activity-grade">
             <h4>學測放榜倒數</h4>
             <img src="./images/grade.png" alt="" width="256" />
-            <time datetime="" class="fs-5">120:00:00</time>
+            <time id="countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="container overflow-hidden">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/Frame.png" alt="" width="256" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/Frame.png" alt="" width="256" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/Frame.png" alt="" width="256" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/Frame.png" alt="" width="256" />
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="last">
-        <div class="title2 pt-5">
+    <div class="container position-relative d-flex flex-column align-items-center">
+      <div class="last d-flex flex-column align-items-center position-relative">
+        <div class="position-relative text-center">
           <picture>
             <source srcset="./images/title1.png" media="(min-width: 767px)" />
-            <img
-              src="./images/title1-sm.png"
-              class="d-block mx-auto"
-              alt="Title"
-            />
+            <img src="./images/title1-sm.png" class="d-block mx-auto" alt="Title" />
           </picture>
-          <p class="text-center">
-            Get ahead with our prediction system based on exam scores and big
-            data analysis
+          <p class="text-center my-3">
+            Get ahead with our prediction system based on <br />exam scores and big data analysis
           </p>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="https://1111-hs.vercel.app/" class="btn bg-primary-purple text-white rounded-pill px-4 py-2 mt-3">前往網站 →</a>
+            <img src="./images/arrow.png" alt="Arrow" class="d-lg-block d-none ms-3" width="120" style="position: relative; top: 10px; max-width: 100px;" />
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
