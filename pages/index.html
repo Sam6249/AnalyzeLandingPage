@@ -20,122 +20,14 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>落點分析</title>
   </head>
   <body>
-    <!-- 導覽列 此區可忽略-->
-    <!-- <nav class="navbar navbar-expand-md bg-dark">
-      <div class="container">
-        <a
-          class="navbar-brand me-10"
-          href="https://career.1111.com.tw/index.aspx"
-          ><img
-            src="https://career.1111.com.tw/images/logo.png"
-            alt="logo"
-            width="130"
-        /></a>
-        <button
-          class="navbar-toggler bg-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="#"
-                target="_blank"
-                >測驗找方向</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                target="_blank"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                職場現況
-              </a>
-              <ul
-                class="dropdown-menu bg-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item text-white" href="#" target="_blank"
-                    >就業市場辭典</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-white" href="#" target="_blank"
-                    >職務辭典</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                target="_blank"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                知識庫
-              </a>
-              <ul
-                class="dropdown-menu bg-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item text-white" href="#" target="_blank"
-                    >技能補充包</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-white" href="#" target="_blank"
-                    >職場秘笈</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="#"
-                target="_blank"
-                >職涯聽診器</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="https://career.1111.com.tw/advisor.aspx"
-                target="_blank"
-                >關於Career+</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
     <!-- 1 -->
     <section class="container mt-4 text-lg-center position-relative">
       <div class="position-relative my-5 py-lg-5">
@@ -541,17 +433,63 @@
       </section>
     </div>
 
-    <div class="container">
-    <div class="last">
-      <div class="title2 pt-5">
-        <picture>
-          <source srcset="./images/title1.png" media="(min-width: 767px)" />
-          <img src="./images/title1-sm.png" class="d-block mx-auto" alt="Title" />
-        </picture>
-        <p class="text-center">Get ahead with our prediction system based on exam scores and big data analysis</p>
+    <div class="container overflow-hidden">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/Frame.png" alt="" width="256" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/Frame.png" alt="" width="256" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/Frame.png" alt="" width="256" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/Frame.png" alt="" width="256" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div></div>
+    </div>
 
+    <div class="container">
+      <div class="last">
+        <div class="title2 pt-5">
+          <picture>
+            <source srcset="./images/title1.png" media="(min-width: 767px)" />
+            <img
+              src="./images/title1-sm.png"
+              class="d-block mx-auto"
+              alt="Title"
+            />
+          </picture>
+          <p class="text-center">
+            Get ahead with our prediction system based on exam scores and big
+            data analysis
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
