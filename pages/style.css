@@ -1,0 +1,188 @@
+/* custom-color */
+:root {
+  --primary-blue: #7aacf1;
+  --primary-orange: #ffa844;
+}
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+.text-primary-orange {
+  color: var(--primary-orange);
+}
+.bg-primary-orange {
+  background-color: var(--primary-orange);
+}
+
+/* typography */
+.noto-sans-tc-thin {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 100;
+}
+.noto-sans-tc-extralight {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 200;
+}
+.noto-sans-tc-light {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 300;
+}
+.noto-sans-tc-regular {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 400;
+}
+.noto-sans-tc-medium {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 500;
+}
+.noto-sans-tc-semibold {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 600;
+}
+.noto-sans-tc-bold {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 700;
+}
+.noto-sans-tc-extrabold {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 800;
+}
+.noto-sans-tc-black {
+  font-family: "Noto Sans TC", serif;
+  font-weight: 900;
+}
+
+/* base */
+body {
+  font-family: "Noto Sans TC", serif;
+  color: #444752;
+  /* background-color: rgb(255, 252, 247); */
+}
+a {
+  text-decoration: none;
+  color: #444752;
+}
+a:hover {
+  color: orange; /* 文字變橘色 */
+  cursor: pointer; /* 滑鼠變成指針，增加交互感 */
+  transition: 0.2s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+span,
+strong {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* header */
+.navbar li {
+  padding: 0 12px;
+}
+.navbar .dropdown-item:hover {
+  background-color: rgb(168, 168, 168);
+}
+
+/* sections */
+.shadow-box {
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.rounded-radius {
+  border-radius: 24px;
+}
+.image-box {
+  display: flex;
+  justify-content: center;
+}
+.truncate-text {
+  display: -webkit-box; /* 將元素設置為彈性盒子 */
+  -webkit-line-clamp: 3; /* 顯示的行數 */
+  -webkit-box-orient: vertical; /* 設置為垂直方向 */
+  overflow: hidden; /* 超出內容隱藏 */
+  text-overflow: ellipsis; /* 超出內容省略號 */
+}
+
+/* 1 */
+.title {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stairs {
+  height: 600px;
+  @media screen and (min-width: 767px) {
+    height: 800px;
+  }
+}
+
+.cardGroup {
+  .card {
+    border-radius: 24px;
+    border: none;
+  }
+  .card-text {
+    letter-spacing: 0.05rem;
+  }
+}
+.custom-box-shadow {
+  box-shadow: 2px 10px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.bggg {
+  background-image: url(./images/section_4_bg.png);
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 767px) {
+    padding: 80px;
+  }
+}
+.threeTab {
+  padding: 20px;
+  border-radius: 16px;
+  @media screen and (min-width: 767px) {
+    padding: 80px;
+  }
+}
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #7aacf1;
+  border-radius: 60px;
+  transition: 0.5s;
+}
+.nav-link {
+  color: black;
+}
+
+
+.bgbbb{
+  background-image: url(./images/section_6_bg.png);
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  @media screen and (min-width: 767px) {
+    padding: 80px;
+  }
+}
