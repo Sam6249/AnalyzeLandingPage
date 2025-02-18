@@ -25,50 +25,46 @@
   </head>
   <body>
     <!-- 1 -->
-    <section class="container mt-4 text-lg-center position-relative">
-      <div class="position-relative my-5 py-lg-5">
-        <!-- 箭頭圖片（確保它在標題下方） -->
+    <section class="container text-lg-center position-relative">
+      <div class="position-relative py-lg-5 my-lg-5 py-2 my-5">
+        <!-- 箭頭圖片 -->
         <picture
           class="position-absolute top-50 start-50 translate-middle w-100 z-1"
         >
           <source
             srcset="./images/mainTitleBg.png"
-            media="(min-width: 767px)"
+            media="(min-width: 400px)"
           />
           <img
             src="./images/mainTitleBg-sm.png"
-            class="w-100 d-block"
-            alt="Banner Image"
+            class="d-block"
+            alt="mainTitleBg"
           />
         </picture>
 
         <!-- 標題 -->
         <h1
-          class="title fs-lg-2 fs-1 fw-bold mx-auto position-relative z-2 d-none d-lg-block"
+          class="mainTitle fw-bold mx-auto position-relative z-2 d-none d-lg-block"
         >
           從學測到填志願，關鍵時程提醒<br />幫助你完美掌握每一步！
         </h1>
         <h1
-          class="title fs-lg-2 fs-1 fw-bold mx-auto position-relative z-2 d-block d-lg-none"
+          class="mainTitle fw-bold mx-5 position-relative z-2 d-block d-lg-none"
         >
           從學測到填志願，關鍵時程提醒幫助你完美掌握每一步！
         </h1>
       </div>
 
-      <div class="banner overflow-hidden mt-3">
+      <!-- 時程表 -->
+      <div class="timeline">
         <picture>
-          <!-- 桌面版圖片 -->
-          <source srcset="./images/Group50.svg" media="(min-width: 767px)" />
-          <!-- 手機版圖片 -->
-          <img src="./images/1.svg" class="w-100 d-block" alt="Banner Image" />
+          <source srcset="./images/flow.svg" media="(min-width: 767px)" />
+          <img src="./images/flow-sm.svg" class="w-100 d-block" alt="flow" />
         </picture>
       </div>
-
-      <div class="stairs mt-3">
+      <div class="stairs mt-md-3 mt-5">
         <picture>
-          <!-- 桌面版圖片 -->
           <source srcset="./images/block.svg" media="(min-width: 767px)" />
-          <!-- 手機版圖片 -->
           <img
             src="./images/block-sm.svg"
             class="w-100 d-block"
@@ -77,11 +73,12 @@
         </picture>
       </div>
     </section>
-    <div class="section2" style="margin-top: -240px">
+
+    <section class="waveBG">
       <!-- 背景波浪 -->
-      <div class="bg position-absolute z-1 start-0 w-100">
+      <div class="position-absolute z-1 start-0 w-100">
         <picture>
-          <source srcset="./images/bg.png" media="(min-width: 767px)" />
+          <source srcset="./images/bg.png" media="(min-width: 992px)" />
           <img
             src="./images/bg-sm.png"
             class="w-100 d-block"
@@ -90,28 +87,40 @@
         </picture>
       </div>
 
-      <!-- 內容區塊 -->
-      <section class="container overflow-hidden mt-5 position-relative z-3">
-        <div class="title pt-5">
+      <!-- 升學指南及升學選擇 -->
+      <div
+        class="firstSection container overflow-hidden mt-5 position-relative"
+      >
+        <div class="title1 pt-5 mt-lg-5">
           <picture>
             <source srcset="./images/title.png" media="(min-width: 767px)" />
-            <img src="./images/a.png" class="d-block mx-auto" alt="Title" />
+            <img
+              src="./images/title-sm.png"
+              class="d-block mx-auto"
+              alt="Title"
+            />
           </picture>
         </div>
-        <div class="row g-4 my-5">
+        <div class="row g-4 my-lg-5 my-3">
           <!-- 落點分析 -->
           <div class="col-lg-6">
             <div
-              class="feature p-4 bg-white d-flex align-items-center rounded shadow-sm"
+              class="feature p-3 bg-white d-flex align-items-center rounded shadow-sm"
             >
-              <img
-                src="./images/icon1.svg"
-                alt="落點分析"
-                class="feature-icon"
-              />
-              <div class="desc text-md-start">
+              <picture>
+                <source
+                  srcset="./images/icon1.svg"
+                  media="(min-width: 767px)"
+                />
+                <img
+                  src="./images/icon1-sm.svg"
+                  class="no-max-width"
+                  alt="Title"
+                />
+              </picture>
+              <div class="desc text-md-start ms-2">
                 <h3 class="fw-bold mb-2">落點分析</h3>
-                <h4 class="fw-normal">
+                <h4 class="fw-normal text-primary-grey">
                   AI 智能預測錄取機率，幫助你選擇最適合的志願
                 </h4>
               </div>
@@ -121,16 +130,22 @@
           <!-- 審查資料 -->
           <div class="col-lg-6">
             <div
-              class="feature p-4 bg-white d-flex align-items-center rounded shadow-sm"
+              class="feature p-3 bg-white d-flex align-items-center rounded shadow-sm"
             >
-              <img
-                src="./images/icon2.svg"
-                alt="審查資料"
-                class="feature-icon"
-              />
-              <div class="desc text-md-start">
+              <picture>
+                <source
+                  srcset="./images/icon2.svg"
+                  media="(min-width: 767px)"
+                />
+                <img
+                  src="./images/icon2-sm.svg"
+                  class="no-max-width"
+                  alt="Title"
+                />
+              </picture>
+              <div class="desc text-md-start ms-2">
                 <h3 class="fw-bold mb-2">審查資料</h3>
-                <h4 class="fw-normal">
+                <h4 class="fw-normal text-primary-grey">
                   完整歷年備審資料、考古題，讓你面試準備無懈可擊
                 </h4>
               </div>
@@ -140,16 +155,22 @@
           <!-- 精華影音 -->
           <div class="col-lg-6">
             <div
-              class="feature p-4 bg-white d-flex align-items-center rounded shadow-sm"
+              class="feature p-3 bg-white d-flex align-items-center rounded shadow-sm"
             >
-              <img
-                src="./images/icon3.svg"
-                alt="精華影音"
-                class="feature-icon"
-              />
-              <div class="desc text-md-start">
+              <picture>
+                <source
+                  srcset="./images/icon3.svg"
+                  media="(min-width: 767px)"
+                />
+                <img
+                  src="./images/icon3-sm.svg"
+                  class="no-max-width"
+                  alt="Title"
+                />
+              </picture>
+              <div class="desc text-md-start ms-2">
                 <h3 class="fw-bold mb-2">精華影音</h3>
-                <h4 class="fw-normal">
+                <h4 class="fw-normal text-primary-grey">
                   專家 & 學長姐深入剖析，提供最實用的升學攻略
                 </h4>
               </div>
@@ -159,16 +180,22 @@
           <!-- 即時資訊 -->
           <div class="col-lg-6">
             <div
-              class="feature p-4 bg-white d-flex align-items-center rounded shadow-sm"
+              class="feature p-3 bg-white d-flex align-items-center rounded shadow-sm"
             >
-              <img
-                src="./images/icon4.svg"
-                alt="即時資訊"
-                class="feature-icon"
-              />
-              <div class="desc text-md-start">
+              <picture>
+                <source
+                  srcset="./images/icon4.svg"
+                  media="(min-width: 767px)"
+                />
+                <img
+                  src="./images/icon4-sm.svg"
+                  class="no-max-width"
+                  alt="Title"
+                />
+              </picture>
+              <div class="desc text-md-start ms-2">
                 <h3 class="fw-bold mb-2">即時資訊</h3>
-                <h4 class="fw-normal">
+                <h4 class="fw-normal text-primary-grey">
                   升學資訊不漏接！提供最新升學新聞與考試趨勢
                 </h4>
               </div>
@@ -176,25 +203,24 @@
           </div>
         </div>
 
-        <h2
-          class="fs-1 section-title text-center fw-bold mt-5 d-lg-block d-none"
-        >
+        <h2 class="fs-1 title2 text-center fw-bold mt-5 pt-5 d-lg-block d-none">
           升學選擇不迷路，AI 幫你找最佳落點！
         </h2>
-        <h2
-          class="fs-1 section-title text-center fw-bold mt-5 d-lg-none d-block"
-        >
+        <h2 class="fs-1 title2 text-center fw-bold mt-5 d-lg-none d-block">
           升學選擇不迷路，<br />AI 幫你找最佳落點！
         </h2>
-        <div class="cardGroup row g-3 my-5">
+        <div class="cardGroup row g-4 my-3">
           <!-- 動態落點分析 -->
           <div class="col-lg-4 col-md-6">
             <div class="card custom-box-shadow">
-              <img
-                src="./images/AI-1.png"
-                class="card-img-top"
-                alt="動態落點分析"
-              />
+              <picture>
+                <source srcset="./images/AI-1.png" media="(min-width: 767px)" />
+                <img
+                  src="./images/AI-1-sm.png"
+                  class="w-100 d-block"
+                  alt="AI-1"
+                />
+              </picture>
               <div class="card-body p-4">
                 <h4 class="card-title fw-bold">動態落點分析</h4>
                 <h5 class="card-text fw-normal mt-3">
@@ -207,11 +233,14 @@
           <!-- 考科組合計算 -->
           <div class="col-lg-4 col-md-6">
             <div class="card custom-box-shadow">
-              <img
-                src="./images/AI-2.png"
-                class="card-img-top"
-                alt="考科組合計算"
-              />
+              <picture>
+                <source srcset="./images/AI-2.png" media="(min-width: 767px)" />
+                <img
+                  src="./images/AI-2-sm.png"
+                  class="w-100 d-block"
+                  alt="AI-2"
+                />
+              </picture>
               <div class="card-body p-4">
                 <h4 class="card-title fw-bold">考科組合計算</h4>
                 <h5 class="card-text fw-normal mt-3">
@@ -224,11 +253,14 @@
           <!-- 志願清單分享 -->
           <div class="col-lg-4 col-md-6 mx-auto">
             <div class="card custom-box-shadow">
-              <img
-                src="./images/AI-3.png"
-                class="card-img-top"
-                alt="志願清單分享"
-              />
+              <picture>
+                <source srcset="./images/AI-3.png" media="(min-width: 767px)" />
+                <img
+                  src="./images/AI-3-sm.png"
+                  class="w-100 d-block"
+                  alt="AI-3"
+                />
+              </picture>
               <div class="card-body p-4">
                 <h4 class="card-title fw-bold">志願清單分享</h4>
                 <h5 class="card-text fw-normal mt-3">
@@ -238,14 +270,14 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <!-- 人際互動 -->
-    <div class="bggg">
+    <!-- 切換區 -->
+    <div class="switch">
       <section class="container">
         <ul
-          class="nav nav-pills bg-white shadow-sm rounded-pill mb-5"
+          class="nav nav-pills bg-white shadow-sm rounded-pill"
           id="pills-tab"
           role="tablist"
         >
@@ -292,7 +324,7 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content py-4" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="pills-home"
@@ -303,13 +335,15 @@
               class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
             >
               <img
-                src="./images/Frame 1000006630.png"
-                alt="即時資訊"
-                class="feature-icon"
+                src="./images/multi.png"
+                alt="multi"
+                class="feature-icon rounded-circle"
               />
               <div class="desc text-md-start ms-lg-5 ms-0">
-                <h3 class="mb-4 fs-1 mt-3 mt-lg-0">即時資訊</h3>
-                <h4 class="fw-normal fs-3">
+                <h3 class="fw-bold mb-4 mt-3 mt-lg-0 text-center text-lg-start">
+                  審查資料
+                </h3>
+                <h4 class="fw-normal text-center text-lg-start">
                   完整歷年備審資料、考古題，讓你面試準備無懈可擊
                 </h4>
               </div>
@@ -325,13 +359,15 @@
               class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
             >
               <img
-                src="./images/Frame 1000006630.png"
-                alt="即時資訊"
-                class="feature-icon"
+                src="./images/star.png"
+                alt="star"
+                class="feature-icon rounded-circle"
               />
               <div class="desc text-md-start ms-lg-5 ms-0">
-                <h3 class="mb-4 fs-1 mt-3 mt-lg-0">面試攻略</h3>
-                <h4 class="fw-normal fs-3">
+                <h3 class="fw-bold mb-4 mt-3 mt-lg-0 text-center text-lg-start">
+                  面試攻略
+                </h3>
+                <h4 class="fw-normal text-center text-lg-start">
                   專家指導，模擬面試情境，提升臨場表現！
                 </h4>
               </div>
@@ -347,13 +383,15 @@
               class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
             >
               <img
-                src="./images/Frame 1000006630.png"
-                alt="即時資訊"
-                class="feature-icon"
+                src="./images/secret.png"
+                alt="secret"
+                class="feature-icon rounded-circle"
               />
               <div class="desc text-md-start ms-lg-5 ms-0">
-                <h3 class="mb-4 fs-1 mt-3 mt-lg-0">升學秘笈</h3>
-                <h4 class="fw-normal fs-3">
+                <h3 class="fw-bold mb-4 mt-3 mt-lg-0 text-center text-lg-start">
+                  升學秘笈
+                </h3>
+                <h4 class="fw-normal text-center text-lg-start">
                   學長姐經驗分享，提供成功升學的獨家技巧！
                 </h4>
               </div>
@@ -363,17 +401,23 @@
       </section>
     </div>
 
-    <!-- 內容區塊 -->
-    <section class="container overflow-hidden mt-5 position-relative z-3">
-      <h2 class="fs-1 section-title text-center fw-bold mt-5 d-lg-block d-none">
+    <!-- 歷年考題 -->
+    <section
+      class="container overflow-hidden mt-lg-5 mt-3 position-relative z-3"
+    >
+      <h2
+        class="fs-1 section-title text-center fw-bold mt-lg-5 mt-3 d-lg-block d-none"
+      >
         歷年考題一把罩，口試面試沒煩惱
       </h2>
-      <h2 class="fs-1 section-title text-center fw-bold mt-5 d-lg-none d-block">
+      <h2
+        class="fs-1 section-title text-center fw-bold mt-lg-5 mt-3 d-lg-none d-block"
+      >
         歷年考題一把罩，<br />口試面試沒煩惱
       </h2>
-      <div class="cardGroup row g-3 my-5">
+      <div class="cardGroup row g-3 my-3">
         <div class="col-lg-6">
-          <div class="card custom-box-shadow">
+          <div class="card custom-box-shadow overflow-hidden">
             <div class="card-body p-4">
               <h4 class="card-title fw-bold">近年大考考題</h4>
               <h5 class="card-text fw-normal mt-3">
@@ -388,7 +432,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="card custom-box-shadow">
+          <div class="card custom-box-shadow overflow-hidden">
             <div class="card-body p-4">
               <h4 class="card-title fw-bold">申請面試攻略</h4>
               <h5 class="card-text fw-normal mt-3">
@@ -396,7 +440,7 @@
               </h5>
             </div>
             <img
-              src="./images/img.png"
+              src="./images/img1.png"
               class="card-img-top"
               alt="動態落點分析"
             />
@@ -405,8 +449,8 @@
       </div>
     </section>
 
-    <!-- 自我檢測 -->
-    <div class="bgbbb">
+    <!-- 最新消息 -->
+    <div class="news">
       <section
         class="container mt-4 d-flex flex-column flex-lg-row justify-content-center align-items-center"
       >
@@ -414,36 +458,52 @@
           <h3 class="text-center text-lg-start fs-1 fw-bold">最新消息</h3>
           <h4>New Information</h4>
         </div>
-        <div class="activity d-flex text-center">
-          <div class="activity-exam mx-lg-5">
+        <div class="activity d-flex flex-column flex-lg-row text-center">
+          <div class="activity-exam mx-lg-5 mb-5 mb-lg-0">
             <h4>大學學測(已過)</h4>
-            <img src="./images/exam.png" alt="" width="256" />
-            <time datetime="2025/01/18~01/20" class="fs-5 text-primary-purple">2025/01/18~01/20</time>
+            <img src="./images/exam.png" alt="" />
+            <time datetime="2025/01/18~01/20" class="fs-5 text-primary-purple"
+              >2025/01/18~01/20</time
+            >
           </div>
           <div class="activity-grade">
             <h4>學測放榜倒數</h4>
-            <img src="./images/grade.png" alt="" width="256" />
-            <time id="countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
+            <img src="./images/grade.png" alt="" />
+            <time id="countdown-timer" class="fs-5 text-primary-purple"
+              >Loading...</time
+            >
           </div>
         </div>
       </section>
     </div>
 
-
-    <div class="container position-relative d-flex flex-column align-items-center">
-      <div class="last d-flex flex-column align-items-center position-relative">
-        <div class="position-relative text-center">
-          <picture>
-            <source srcset="./images/title1.png" media="(min-width: 767px)" />
-            <img src="./images/title1-sm.png" class="d-block mx-auto" alt="Title" />
-          </picture>
-          <p class="text-center my-3">
-            Get ahead with our prediction system based on <br />exam scores and big data analysis
-          </p>
-          <div class="d-flex align-items-center justify-content-center">
-            <a href="https://1111-hs.vercel.app/" class="btn bg-primary-purple text-white rounded-pill px-4 py-2 mt-3">前往網站 →</a>
-            <img src="./images/arrow.png" alt="Arrow" class="d-lg-block d-none ms-3" width="120" style="position: relative; top: 10px; max-width: 100px;" />
-          </div>
+    <div class="watch position-relative">
+      <div class="container position-relative text-center">
+        <picture>
+          <source srcset="./images/title1.png" media="(min-width: 767px)" />
+          <img
+            src="./images/title1-sm.png"
+            class="d-block mx-auto"
+            alt="Title"
+          />
+        </picture>
+        <p class="text-center my-3">
+          Get ahead with our prediction system based on <br />exam scores and
+          big data analysis
+        </p>
+        <div class="d-flex align-items-center justify-content-center">
+          <a
+            href="https://1111-hs.vercel.app/"
+            class="btn bg-primary-purple text-white rounded-pill px-4 py-2 mt-3"
+            >前往網站 →</a
+          >
+          <img
+            src="./images/arrow.png"
+            alt="Arrow"
+            class="d-lg-block d-none ms-3"
+            width="120"
+            style="position: relative; top: 10px; max-width: 100px"
+          />
         </div>
       </div>
     </div>

@@ -22,6 +22,5 @@ function startCountdown(targetDate) {
     const interval = setInterval(updateCountdown, 1000);
   }
 
-  // 設定目標時間（2025 年 2 月 25 日 00:00:00）
   const targetDate = new Date("2025-02-25T00:00:00");
   startCountdown(targetDate);
