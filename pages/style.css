@@ -24,10 +24,12 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 a:hover {
   cursor: pointer; 
   transition: 0.2s;
+  color: #7aacf1;
 }
 
 img {
@@ -101,6 +103,9 @@ h6 {
   @media screen and (min-width: 767px) {
     font-size: 24px;
   }
+}
+.feature:hover {
+  transform: translate(10);
 }
 
 .cardGroup {
@@ -202,4 +207,62 @@ h6 {
 
 .watch{
   margin-top: 80px;
+  .arrow {
+    margin-top: 100px;
+    margin-left: -120px;
+    transform: rotate(30deg);
+  }
 }
+
+.footerBG{
+  background-color: #343A40;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-8px) scale(1.02); /* 懸浮時微微上移並放大 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加陰影，讓視覺更有層次 */
+}
+
+
+/* .decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.deco {
+  position: absolute;
+  z-index: -1; 
+  opacity: 0.8;
+}
+
+.deco-circle0 {
+  top: 20%;
+  left: 10%;
+  width: 80px;
+}
+.deco-circle1 {
+  top: 50%;
+  left: 5%;
+  width: 80px;
+}
+.deco-circle2 {
+  top: 100%;
+  left: 5%;
+  width: 80px;
+}
+.deco-circle3 {
+  top: 10%;
+  left: 5%;
+  width: 80px;
+}
+
+.deco-rect0 {
+  top: 15%;
+  right: 0%;
+  width: 180px;
+} */
