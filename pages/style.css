@@ -207,9 +207,13 @@ h6 {
     width: 128px;
     margin: 0 auto;
   }
+  time{
+    border: 1px #AF5CD5 solid;
+    padding: 2px 20px;
+    border-radius: 40px;
+  }
   @media screen and (min-width: 767px) {
-    margin-top: 40px;
-    padding: 100px 0;
+    padding: 60px 0;
     img{
       width: 256px;
       margin: 0 auto;

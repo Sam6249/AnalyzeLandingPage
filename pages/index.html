@@ -629,28 +629,27 @@
     <!-- 最新消息 -->
     <div class="news">
       <section
-        class="container mt-4 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+        class="container py-4 d-flex flex-column flex-lg-row justify-content-center align-items-center"
       >
         <div class="mb-5 mb-lg-0 me-lg-3">
           <h3 class="text-center text-lg-start fs-1 fw-bold">最新消息</h3>
           <h4>New Information</h4>
         </div>
         <div class="activity d-flex flex-column flex-lg-row text-center">
-          <div class="activity-exam mx-lg-5 mb-5 mb-lg-0">
-            <h4>大學學測(已過)</h4>
-            <img src="./images/exam.png" alt="" class="my-lg-3" />
-            <time datetime="2025/01/18~01/20" class="fs-5 text-primary-purple"
-              >2025/01/18~01/20</time
-            >
-          </div>
+          <!-- 學測放榜倒數 -->
           <div class="activity-grade">
-            <h4>學測放榜倒數</h4>
-            <img src="./images/grade.png" alt="" class="my-lg-3" />
-            <time id="countdown-timer" class="fs-5 text-primary-purple"
-              >Loading...</time
-            >
+            <h4>學測放榜倒數(02/25)</h4>
+            <img src="./images/grade.png" alt="grade" class="my-lg-3" />
+            <time id="gsat-countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
+          </div>
+          <!-- 繁星報名倒數 -->
+          <div class="activity-exam mx-lg-5 mb-5 mb-lg-0">
+            <h4>繁星報名倒數(03/11)</h4>
+            <img src="./images/exam.png" alt="exam" class="my-lg-3" />
+            <time id="star-countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
           </div>
         </div>
+        
       </section>
     </div>
 
