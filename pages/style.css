@@ -65,6 +65,19 @@ h6 {
   overflow: hidden;
 }
 
+/* utils */
+.custom-box-shadow {
+  box-shadow: 2px 10px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-8px) scale(1.02); /* 懸浮時微微上移並放大 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加陰影，讓視覺更有層次 */
+}
 
 /* 1 */
 .mainTitle{
@@ -92,6 +105,7 @@ h6 {
   }
 }
 
+/* 2 */
 .feature h3{
   font-size: 20px;
   @media screen and (min-width: 767px) {
@@ -129,10 +143,8 @@ h6 {
     }
   }
 }
-.custom-box-shadow {
-  box-shadow: 2px 10px 10px 1px rgba(0, 0, 0, 0.15);
-}
 
+/* 3 */
 .switch{
   background-image: url(./images/section_4_bg.png);
   background-size: 100% 100%;
@@ -212,23 +224,20 @@ h6 {
     margin-left: -120px;
     transform: rotate(30deg);
   }
+  .btn:hover{
+    background-color: #873baa;
+  }
 }
 
 .footerBG{
   background-color: #343A40;
 }
 
-.hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-effect:hover {
-  transform: translateY(-8px) scale(1.02); /* 懸浮時微微上移並放大 */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加陰影，讓視覺更有層次 */
-}
-
-
-/* .decorations {
+/* deco */
+.decorations {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -242,27 +251,108 @@ h6 {
 
 .deco-circle0 {
   top: 20%;
-  left: 10%;
-  width: 80px;
-}
-.deco-circle1 {
-  top: 50%;
   left: 5%;
   width: 80px;
 }
-.deco-circle2 {
-  top: 100%;
-  left: 5%;
-  width: 80px;
-}
-.deco-circle3 {
-  top: 10%;
-  left: 5%;
-  width: 80px;
-}
-
 .deco-rect0 {
   top: 15%;
   right: 0%;
-  width: 180px;
-} */
+  width: 120px;
+}
+.deco-rect1 {
+  top: 65%;
+  left: -2%;
+  width: 120px;
+}
+.deco-circle1 {
+  top: 60%;
+  right: 5%;
+  width: 60px;
+}
+.deco-rect2 {
+  top: 80%;
+  right: -3%;
+  width: 140px;
+}
+.deco-circle2 {
+  top: 80%;
+  left: 6%;
+  width: 60px;
+}
+
+
+.deco-circle3 {
+  top: 0%;
+  left: 5%;
+  width: 80px;
+  z-index: 2;
+}
+.deco-rect3 {
+  top: 0%;
+  right: 2%;
+  width: 120px;
+  z-index: 2;
+}
+.deco-circle4 {
+  top: 20%;
+  right: 0%;
+  width: 80px;
+  z-index: 2;
+}
+.deco-rect4 {
+  top: 20%;
+  left: 2%;
+  width: 140px;
+  z-index: 2;
+}
+.deco-circle5 {
+  top: 50%;
+  left: 0%;
+  width: 80px;
+}
+.deco-rect5 {
+  top: 80%;
+  left: 4%;
+  width: 140px;
+  z-index: 2;
+}
+.deco-circle6 {
+  top: 80%;
+  right: 4%;
+  width: 80px;
+  z-index: 2;
+}
+.deco-rect6 {
+  top: 50%;
+  right: 4%;
+  width: 140px;
+  z-index: 2;
+}
+
+/* backTopBtn */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: none; 
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #357abd;
+}
+
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
