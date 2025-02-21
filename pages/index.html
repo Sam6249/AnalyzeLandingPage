@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--  基礎設定 -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>114學測落點分析｜精準預測錄取機率，選擇最佳志願</title>
-    <meta
-      name="description"
-      content="AI智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。提供學測分數落點分析、歷年錄取分數、備審資料、升學秘笈等完整資訊。"
-    />
-    <meta
-      name="keywords"
-      content="學測落點, 學測志願選擇, AI錄取預測, 大學錄取分數, 升學規劃, 學測統測分析, 落點預測, 大學選填志願"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:title"
-      content="學測落點分析｜精準預測錄取機率，選擇最佳志願"
-    />
-    <meta
-      property="og:description"
-      content="AI 智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。"
-    />
-    <meta
-      property="og:image"
-      content="https://hs.1111.com.tw/images/1200x630fb.png"
-    />
+
+    <!--  SEO 相關 meta -->
+    <meta name="description" content="AI智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。提供學測分數落點分析、歷年錄取分數、備審資料、升學秘笈等完整資訊。" />
+    <meta name="keywords" content="學測落點, 學測志願選擇, AI錄取預測, 大學錄取分數, 升學規劃, 學測統測分析, 落點預測, 大學選填志願" />
+    <meta property="og:title" content="學測落點分析｜精準預測錄取機率，選擇最佳志願" />
+    <meta property="og:description" content="AI 智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。" />
+    <meta property="og:image" content="https://hs.1111.com.tw/images/1200x630fb.png" />
     <meta property="og:url" content="https://exam-match.1111.com.tw/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="學測落點分析｜精準預測錄取機率，選擇最佳志願"
-    />
-    <meta
-      name="twitter:description"
-      content="AI 智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。"
-    />
-    <meta
-      name="twitter:image"
-      content="https://hs.1111.com.tw/images/1200x630fb.png"
-    />
+    <meta name="twitter:title" content="學測落點分析｜精準預測錄取機率，選擇最佳志願" />
+    <meta name="twitter:description" content="AI 智能預測錄取機率，結合大數據精準分析，讓你快速找到最適合的學校與科系。" />
+    <meta name="twitter:image" content="https://hs.1111.com.tw/images/1200x630fb.png" />
     <link rel="canonical" href="https://exam-match.1111.com.tw/" />
-  </head>
+
+    <!--  Google Tag Manager (放在這裡) -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5LMP5JLP');
+    </script>
+
+    <!--  字型 & CSS（先載入 Google Fonts & Bootstrap） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--  Favicon -->
+    <link rel="icon" type="image/png" href="https://exam-match.1111.com.tw/favicon.png" />
+
+    <!--  標題 -->
+    <title>114學測落點分析｜精準預測錄取機率，選擇最佳志願</title>
+</head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5LMP5JLP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- deco1 -->
     <div class="decorations d-xl-block d-none">
       <img
-        src="./images/deco/CirclePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/CirclePink.png"
         class="deco deco-circle0"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect0"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect1"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CircleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/CircleOrange.png"
         class="deco deco-circle1"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectanglePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectanglePink.png"
         class="deco deco-rect2"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CirclePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/CirclePink.png"
         class="deco deco-circle2"
         alt="Decoration"
       />
@@ -102,11 +95,11 @@
           class="position-absolute top-50 start-50 translate-middle w-100 z-1"
         >
           <source
-            srcset="./images/mainTitleBg.png"
+            srcset="https://exam-match.1111.com.tw/images/mainTitleBg.png"
             media="(min-width: 400px)"
           />
           <img
-            src="./images/mainTitleBg-sm.png"
+            src="https://exam-match.1111.com.tw/images/mainTitleBg-sm.png"
             class="d-block"
             alt="mainTitleBg"
           />
@@ -128,15 +121,25 @@
       <!-- 時程表 -->
       <div class="timeline">
         <picture>
-          <source srcset="./images/flow.svg" media="(min-width: 767px)" />
-          <img src="./images/flow-sm.svg" class="w-100 d-block" alt="flow" />
+          <source
+            srcset="https://exam-match.1111.com.tw/images/flow.svg"
+            media="(min-width: 767px)"
+          />
+          <img
+            src="https://exam-match.1111.com.tw/images/flow-sm.svg"
+            class="w-100 d-block"
+            alt="flow"
+          />
         </picture>
       </div>
       <div class="stairs mt-md-3 mt-5">
         <picture>
-          <source srcset="./images/block.svg" media="(min-width: 767px)" />
+          <source
+            srcset="https://exam-match.1111.com.tw/images/block.svg"
+            media="(min-width: 767px)"
+          />
           <img
-            src="./images/block-sm.svg"
+            src="https://exam-match.1111.com.tw/images/block-sm.svg"
             class="w-100 d-block"
             alt="Banner Image"
           />
@@ -147,42 +150,42 @@
     <!-- deco2 -->
     <div class="decorations d-xl-block d-none">
       <img
-        src="./images/deco/CircleWhite.png"
+        src="https://exam-match.1111.com.tw/images/deco/CircleWhite.png"
         class="deco deco-circle3"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect3"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect4"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CircleWhite.png"
+        src="https://exam-match.1111.com.tw/images/deco/CircleWhite.png"
         class="deco deco-circle4"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect5"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CirclePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/CirclePink.png"
         class="deco deco-circle5"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectanglePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectanglePink.png"
         class="deco deco-rect6"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CircleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/CircleOrange.png"
         class="deco deco-circle6"
         alt="Decoration"
       />
@@ -191,9 +194,12 @@
       <!-- 波浪背景 -->
       <div class="position-absolute z-1 start-0 w-100">
         <picture>
-          <source srcset="./images/bg.png" media="(min-width: 992px)" />
+          <source
+            srcset="https://exam-match.1111.com.tw/images/bg.png"
+            media="(min-width: 992px)"
+          />
           <img
-            src="./images/bg-sm.png"
+            src="https://exam-match.1111.com.tw/images/bg-sm.png"
             class="w-100 d-block"
             alt="Background Waves"
           />
@@ -206,9 +212,12 @@
       >
         <div class="title1 pt-5 mt-lg-5">
           <picture>
-            <source srcset="./images/title.png" media="(min-width: 767px)" />
+            <source
+              srcset="https://exam-match.1111.com.tw/images/title.png"
+              media="(min-width: 767px)"
+            />
             <img
-              src="./images/title-sm.png"
+              src="https://exam-match.1111.com.tw/images/title-sm.png"
               class="d-block mx-auto"
               alt="Title"
             />
@@ -223,11 +232,11 @@
               >
                 <picture>
                   <source
-                    srcset="./images/icon1.svg"
+                    srcset="https://exam-match.1111.com.tw/images/icon1.svg"
                     media="(min-width: 767px)"
                   />
                   <img
-                    src="./images/icon1-sm.svg"
+                    src="https://exam-match.1111.com.tw/images/icon1-sm.svg"
                     class="no-max-width"
                     alt="Title"
                   />
@@ -250,11 +259,11 @@
               >
                 <picture>
                   <source
-                    srcset="./images/icon2.svg"
+                    srcset="https://exam-match.1111.com.tw/images/icon2.svg"
                     media="(min-width: 767px)"
                   />
                   <img
-                    src="./images/icon2-sm.svg"
+                    src="https://exam-match.1111.com.tw/images/icon2-sm.svg"
                     class="no-max-width"
                     alt="Title"
                   />
@@ -277,11 +286,11 @@
               >
                 <picture>
                   <source
-                    srcset="./images/icon3.svg"
+                    srcset="https://exam-match.1111.com.tw/images/icon3.svg"
                     media="(min-width: 767px)"
                   />
                   <img
-                    src="./images/icon3-sm.svg"
+                    src="https://exam-match.1111.com.tw/images/icon3-sm.svg"
                     class="no-max-width"
                     alt="Title"
                   />
@@ -304,11 +313,11 @@
               >
                 <picture>
                   <source
-                    srcset="./images/icon4.svg"
+                    srcset="https://exam-match.1111.com.tw/images/icon4.svg"
                     media="(min-width: 767px)"
                   />
                   <img
-                    src="./images/icon4-sm.svg"
+                    src="https://exam-match.1111.com.tw/images/icon4-sm.svg"
                     class="no-max-width"
                     alt="Title"
                   />
@@ -335,9 +344,12 @@
           <div class="col-lg-4 col-md-6">
             <div class="card custom-box-shadow">
               <picture>
-                <source srcset="./images/AI-1.png" media="(min-width: 767px)" />
+                <source
+                  srcset="https://exam-match.1111.com.tw/images/AI-1.png"
+                  media="(min-width: 767px)"
+                />
                 <img
-                  src="./images/AI-1-sm.png"
+                  src="https://exam-match.1111.com.tw/images/AI-1-sm.png"
                   class="w-100 d-block"
                   alt="AI-1"
                 />
@@ -357,9 +369,12 @@
           <div class="col-lg-4 col-md-6">
             <div class="card custom-box-shadow">
               <picture>
-                <source srcset="./images/AI-2.png" media="(min-width: 767px)" />
+                <source
+                  srcset="https://exam-match.1111.com.tw/images/AI-2.png"
+                  media="(min-width: 767px)"
+                />
                 <img
-                  src="./images/AI-2-sm.png"
+                  src="https://exam-match.1111.com.tw/images/AI-2-sm.png"
                   class="w-100 d-block"
                   alt="AI-2"
                 />
@@ -377,9 +392,12 @@
           <div class="col-lg-4 col-md-6 mx-auto">
             <div class="card custom-box-shadow">
               <picture>
-                <source srcset="./images/AI-3.png" media="(min-width: 767px)" />
+                <source
+                  srcset="https://exam-match.1111.com.tw/images/AI-3.png"
+                  media="(min-width: 767px)"
+                />
                 <img
-                  src="./images/AI-3-sm.png"
+                  src="https://exam-match.1111.com.tw/images/AI-3-sm.png"
                   class="w-100 d-block"
                   alt="AI-3"
                 />
@@ -459,7 +477,7 @@
                 class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
               >
                 <img
-                  src="./images/multi.png"
+                  src="https://exam-match.1111.com.tw/images/multi.png"
                   alt="multi"
                   class="feature-icon rounded-circle"
                 />
@@ -490,7 +508,7 @@
                 class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
               >
                 <img
-                  src="./images/star.png"
+                  src="https://exam-match.1111.com.tw/images/star.png"
                   alt="star"
                   class="feature-icon rounded-circle"
                 />
@@ -520,7 +538,7 @@
                 class="threeTab custom-box-shadow bg-white d-flex flex-column flex-lg-row"
               >
                 <img
-                  src="./images/secret.png"
+                  src="https://exam-match.1111.com.tw/images/secret.png"
                   alt="secret"
                   class="feature-icon rounded-circle"
                 />
@@ -546,32 +564,32 @@
     <!-- deco3 -->
     <div class="decorations d-xl-block d-none">
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect3"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect4"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectangleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectangleOrange.png"
         class="deco deco-rect5"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CirclePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/CirclePink.png"
         class="deco deco-circle5"
         alt="Decoration"
       />
       <img
-        src="./images/deco/RectanglePink.png"
+        src="https://exam-match.1111.com.tw/images/deco/RectanglePink.png"
         class="deco deco-rect6"
         alt="Decoration"
       />
       <img
-        src="./images/deco/CircleOrange.png"
+        src="https://exam-match.1111.com.tw/images/deco/CircleOrange.png"
         class="deco deco-circle6"
         alt="Decoration"
       />
@@ -601,7 +619,7 @@
                 </h5>
               </div>
               <img
-                src="./images/img.png"
+                src="https://exam-match.1111.com.tw/images/img.png"
                 class="card-img-top"
                 alt="動態落點分析"
               /></div
@@ -617,7 +635,7 @@
                 </h5>
               </div>
               <img
-                src="./images/img1.png"
+                src="https://exam-match.1111.com.tw/images/img1.png"
                 class="card-img-top"
                 alt="動態落點分析"
               /></div
@@ -639,26 +657,40 @@
           <!-- 學測放榜倒數 -->
           <div class="activity-grade">
             <h4>學測放榜倒數(02/25)</h4>
-            <img src="./images/grade.png" alt="grade" class="my-lg-3" />
-            <time id="gsat-countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
+            <img
+              src="https://exam-match.1111.com.tw/images/grade.png"
+              alt="grade"
+              class="my-lg-3"
+            />
+            <time id="gsat-countdown-timer" class="fs-5 text-primary-purple"
+              >Loading...</time
+            >
           </div>
           <!-- 繁星報名倒數 -->
-          <div class="activity-exam mx-lg-5 mb-5 mb-lg-0">
+          <div class="activity-exam mx-lg-5 mt-5 mt-lg-0">
             <h4>繁星報名倒數(03/11)</h4>
-            <img src="./images/exam.png" alt="exam" class="my-lg-3" />
-            <time id="star-countdown-timer" class="fs-5 text-primary-purple">Loading...</time>
+            <img
+              src="https://exam-match.1111.com.tw/images/exam.png"
+              alt="exam"
+              class="my-lg-3"
+            />
+            <time id="star-countdown-timer" class="fs-5 text-primary-purple"
+              >Loading...</time
+            >
           </div>
         </div>
-        
       </section>
     </div>
 
     <div class="watch position-relative">
       <div class="container position-relative text-center">
         <picture>
-          <source srcset="./images/title1.png" media="(min-width: 767px)" />
+          <source
+            srcset="https://exam-match.1111.com.tw/images/title1.png"
+            media="(min-width: 767px)"
+          />
           <img
-            src="./images/title1-sm.png"
+            src="https://exam-match.1111.com.tw/images/title1-sm.png"
             class="d-block mx-auto"
             alt="Title"
           />
@@ -679,7 +711,7 @@
           </div>
           <div class="arrow col-lg-4 d-lg-block d-none">
             <img
-              src="./images/arrow.png"
+              src="https://exam-match.1111.com.tw/images/arrow.png"
               alt="Arrow"
               class="d-lg-block d-none"
               width="120"
@@ -693,7 +725,13 @@
       全球華人股份有限公司版權所有 © 2024 1111 Job Bank All Rights Reserved.
     </footer>
     <!-- 回到頂部按鈕 -->
-    <button id="backToTop" class="back-to-top"><img src="./images/Go-to-top.png" alt="Back to Top" width="44" /></button>
+    <button id="backToTop" class="back-to-top">
+      <img
+        src="https://exam-match.1111.com.tw/images/Go-to-top.png"
+        alt="Back to Top"
+        width="44"
+      />
+    </button>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
